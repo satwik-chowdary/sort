@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Algorithm Visualiser</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id=header>
+        <div class="container-fluid">
+            <div class="page-header text-center" style="padding: 10px;background-color:#F4EFEA;color: #7D141D;border-radius: 0.5cm;">
+                <h1 style="font-family:Comfortaa;">Sorting Algorithm Visualiser </h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 text-center " style="margin-top: 30px;border-left: 1px;">
+                <button type="button" class="btn btn-danger" id="generate" style="border-radius: 0.5cm;font-family:Comfortaa;">Generate New Array</button>
+            </div>
+            <div class="col-sm-4 text-center " style="margin-top: 30px; border-left: 0.5px solid black;;border-right: 0.5px solid black;">
+                <div class="text-center">
+                    <div>
+                        <label for="size"><span style="font-size: 25px;font-family:Comfortaa;">Adjust Size :  </span></label>
+                        <input type="range" id="size" name="size" min="10" max="120">
+                    </div>
+                    <div>
+                        <label for="speed"><span style="font-size:25px;font-family:Comfortaa;"> Adjust Speed :  </span></label>
+                        <input type="range" id="speed" name="speed" min="10" max="40">
+                    </div>
+                </div>
+            </div>
+            <div class="col text-center " style="margin-top: 30px;">
+                <button type="button" class="btn btn-danger" id="merge" style="margin-left:6px;font-family:Ubuntu;margin-bottom: 10px;border-radius: 0.5cm;"><span style="font-family: Comfortaa;">Merge Sort</span></button>
+                <button type="button" class="btn btn-danger" id="bubble" style="margin-left:6px;font-family:Ubuntu;margin-bottom: 10px;border-radius: 0.5cm;"><span style="font-family: Comfortaa;">Bubble Sort</span></button>
+                <button type="button" class="btn btn-danger" id="insertion" style="margin-left:6px;font-family:Ubuntu;margin-bottom: 10px;border-radius: 0.5cm;"><span style="font-family: Comfortaa;">Insertion Sort</span></button>
+                <button type="button" class="btn btn-danger" id="selection" style="margin-left:6px;font-family:Ubuntu;margin-bottom: 10px;border-radius: 0.5cm;"><span style="font-family: Comfortaa;">Selection Sort</span></button>
+                <button type="button" class="btn btn-danger" id="quick" style="margin-left:6px;font-family:Ubuntu;margin-bottom: 10px;border-radius: 0.5cm;"><span style="font-family: Comfortaa;">Quick Sort</span></button>
+                <button type="button" class="btn btn-danger" id="HEAP" style="margin-left:6px;font-family:Ubuntu;margin-bottom: 10px;border-radius: 0.5cm;"><span style="font-family: Comfortaa;">Heap Sort</span></button>
+            </div>
+
+        </div>
+    </div>
+    <div id="bar-container">
+
+    </div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script src="bubble_sort.js"></script>
+<script src="insertionsort.js">
+</script>
+<script src="selection_sort.js"></script>
+<script src= "heap_sort.js" ></script>
+<script src="merge_sort.js"></script>
+<script src="quick.js"></script>
+
+</html>
